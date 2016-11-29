@@ -1,0 +1,4 @@
+#!/bin/sh
+cd `dirname $0`
+ROOT_PATH=`pwd`
+java -Xms256M -Xmx1024M -cp .:$ROOT_PATH:$ROOT_PATH/../lib/routines.jar:$ROOT_PATH/../lib/commons-logging-1.1.3.jar:$ROOT_PATH/../lib/httpcore-4.3.3.jar:$ROOT_PATH/../lib/log4j-1.2.16.jar:$ROOT_PATH/../lib/aws-java-sdk-1.10.52.jar:$ROOT_PATH/../lib/dom4j-1.6.1.jar:$ROOT_PATH/../lib/RedshiftJDBC41-1.1.13.1013.jar:$ROOT_PATH/../lib/httpclient-4.3.6.jar:$ROOT_PATH/../lib/jackson-databind-2.5.3.jar:$ROOT_PATH/../lib/commons-codec-1.6.jar:$ROOT_PATH/../lib/jackson-annotations-2.5.3.jar:$ROOT_PATH/../lib/joda-time-2.8.1.jar:$ROOT_PATH/../lib/jackson-core-2.5.3.jar:$ROOT_PATH/copy_red_shift_0_1.jar: dmi.copy_red_shift_0_1.copy_red_shift --context=Default "$@" 

@@ -1,0 +1,3 @@
+%~d0
+cd %~dp0
+java -Xms256M -Xmx1024M -cp .;../lib/routines.jar;../lib/commons-logging-1.1.3.jar;../lib/httpcore-4.3.3.jar;../lib/log4j-1.2.16.jar;../lib/aws-java-sdk-1.10.52.jar;../lib/dom4j-1.6.1.jar;../lib/RedshiftJDBC41-1.1.13.1013.jar;../lib/httpclient-4.3.6.jar;../lib/jackson-databind-2.5.3.jar;../lib/commons-codec-1.6.jar;../lib/jackson-annotations-2.5.3.jar;../lib/joda-time-2.8.1.jar;../lib/jackson-core-2.5.3.jar;copy_red_shift_0_1.jar; dmi.copy_red_shift_0_1.copy_red_shift --context=Default %* 
